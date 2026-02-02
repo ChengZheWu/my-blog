@@ -7,7 +7,7 @@ resource "hcloud_server" "k3s_node" {
   name = "k3s-server"
   image = "ubuntu-24.04"
   server_type = var.server_type
-  location = var.locaion
+  location = var.location
   ssh_keys = [hcloud_ssh_key.default.id]
 
   public_net {

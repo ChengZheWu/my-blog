@@ -5,5 +5,5 @@ output "server_ip" {
 
 output "ssh_command" {
   description = "Command to SSH into the server"
-  value = "ssh root@{hcloud_server.k3s_node.ipv4_address}"
+  value = "ssh root@${hcloud_server.k3s_node.ipv4_address}"
 }

@@ -7,6 +7,6 @@ spec:
     app: my-blog
   type: LoadBalancer
   ports:
-    - TCP
+    - protocol: TCP
       port: 80
       targetPort: 80

@@ -10,7 +10,7 @@ until k3s kubectl get node; do
 done
 
 cat <<EOF > /root/k8s.yaml
-${deployment_yaml_content}
+${k8s_yaml_content}
 EOF
 
 k3s kubectl apply -f /root/k8s.yaml
