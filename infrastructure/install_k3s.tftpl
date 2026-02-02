@@ -1,0 +1,16 @@
+#!/bin/bash
+
+apt-get update && apt-get upgrade -y
+
+curl -sfL https://get.k3s.io | sh -
+
+until k3s kubectl get node; do
+  echo "Waiting for k3s..."
+  sleep 5
+done
+
+cat <<EOF > /root/k8s.yaml
+${deployment_yaml_content}
+EOF
+
+k3s kubectl apply -f /root/k8s.yaml

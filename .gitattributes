@@ -1,0 +1,8 @@
+# 預設行為：自動判斷
+* text=auto
+
+# 關鍵設定：強制這些腳本檔案永遠使用 Linux 換行 (LF)
+*.sh text eol=lf
+*.tftpl text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf

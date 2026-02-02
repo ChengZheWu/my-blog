@@ -1,0 +1,20 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (這是 terraform 的狀態檔，裡面會有明碼，不要上傳)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sentitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
