@@ -112,6 +112,20 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.social-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color: var(--accent-color);
+}
+
+.social-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 .timeline-item {
     border-left: 3px solid var(--accent-color);
     padding-left: 20px;
