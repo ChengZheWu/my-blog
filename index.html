@@ -9,7 +9,7 @@
 <body class="lang-zh">
 
     <nav>
-        <div class="nav-brand">ChengZhe Wu (Andy)</div>
+        <div class="nav-brand">Resume</div>
         <div class="nav-links">
             <button onclick="showPage('about')" class="active" id="btn-about">
                 <span class="zh-inline">關於我</span><span class="en-inline">About Me</span>
@@ -29,9 +29,12 @@
     <div class="container">
         <div id="about" class="page-section active">
             <div class="card profile-header">
-                <h1>ChengZhe Wu (Andy)</h1>
+                <h1>
+                    <span class="zh-inline">吳承哲 (Andy)</span>
+                    <span class="en-inline">ChengZhe Wu (Andy)</span>
+                </h1>
                 <div class="contact-info">
-                    <span><span class="zh-inline">手機:</span><span class="en-inline">Mobile:</span> 0930-721-818</span>
+                    <span><span class="zh-inline">手機:</span><span class="en-inline">Mobile:</span> (+886) 930-721-818</span>
                     <span>Email: luckyandy234@gmail.com</span>
                     <a href="https://linkedin.com/in/chengzhewu" target="_blank">LinkedIn</a>
                     <a href="https://github.com/ChengZheWu" target="_blank">GitHub</a>
@@ -41,12 +44,12 @@
             <div class="card">
                 <h2><span class="zh-inline">個人簡介</span><span class="en-inline">Introduction</span></h2>
                 <div class="zh-text">
-                    <p>我是一名經驗豐富的軟體與韌體工程師，專精於 SSD 儲存系統、PCIe/NVMe 協定以及嵌入式系統開發。在群聯電子任職期間，我負責開發 Gen5 SSD 韌體架構，並解決複雜的硬體與軟體整合問題。</p>
-                    <p>除了底層系統開發，我也熱衷於雲端技術與自動化流程，熟悉 Docker、K8s、AWS 以及 CI/CD 流程。我致力於運用技術解決實際問題，從自動化財經新聞摘要到開發高效能的檔案系統。</p>
+                    <p>我是一名熱愛學習新技術的工程師，研究所時期以研究AI影像處理為主，而在過去的工作中從事SSD控制晶片韌體開發，主要解決PCIe跟NVMe相關的host端問題，並熟悉軟硬體整合。</p>
+                    <p>目前想轉職為一名軟體工程師，在一年的gap year中，除了練習LeetCode之外，我自主學習了 DevOps 技術與自動化流程，像是 Docker、K8s、Terraform 以及 CI/CD 流程等等，並且學以致用了幾個實用的專案，不僅可以幫助自己解決自身需求，還能夠精進自己的技術。</p>
                 </div>
                 <div class="en-text">
-                    <p>I am an experienced Software and Firmware Engineer specializing in SSD storage systems, PCIe/NVMe protocols, and embedded system development. During my tenure at Phison Electronics, I developed the Gen5 SSD firmware architecture and resolved complex hardware-software integration issues.</p>
-                    <p>Beyond low-level system development, I am passionate about cloud technologies and automation. I am proficient in Docker, K8s, AWS, and CI/CD pipelines. I am dedicated to using technology to solve real-world problems, ranging from automated financial news summarization to developing high-performance file systems.</p>
+                    <p>I am an engineer who is passionate about learning new technologies. During my graduate studies, my research focused on AI image processing. In my previous role, I worked on SSD controller firmware development, primarily handling host-side issues related to PCIe and NVMe, and I am familiar with hardware-software integration.</p>
+                    <p>Currently, I am looking to transition into a career as a software engineer. During my one-year gap year, in addition to practicing LeetCode, I have self-studied DevOps technologies and automation workflows, such as Docker, K8s, Terraform, and CI/CD processes. I have also applied what I’ve learned to several practical projects, which not only help solve my own needs but also allow me to refine my technical skills.</p>
                 </div>
             </div>
 
@@ -55,28 +58,39 @@
                 
                 <div class="timeline-item">
                     <h3>
-                        <span class="zh-inline">SSD 韌體工程師</span><span class="en-inline">SSD Firmware Engineer</span> 
-                        - Phison Electronics Corp
+                        <span class="zh-inline">SSD 韌體工程師 - 群聯電子</span><span class="en-inline">SSD Firmware Engineer - Phison Electronics Corp</span> 
                     </h3>
                     <div class="timeline-date">Dec 2021 - Mar 2025</div>
                     <div class="zh-text">
                         <ul>
-                            <li>開發首款 SSD E31 PCIe/NVMe Gen5 韌體架構。</li>
-                            <li>負責 E31 Gen5 SSD 控制器的 PCIe 初始化流程，確保軟硬體整合與 Gen5 連結穩定性。</li>
-                            <li>根據客戶需求設計並實作客製化韌體功能與 Host 端協定。</li>
-                            <li>優化底層系統序列（包含開機與重置延遲），提升系統響應速度以符合 OEM 嚴格要求。</li>
-                            <li>開發 ARM 架構之 PCIe/NVMe Gen3/4/5 SSD 韌體，專精於中斷處理、記憶體管理、電源管理與 DMA。</li>
-                            <li>利用邏輯分析儀、Protocol Analyzer (Viavi, LeCroy) 解決跨平台相容性問題。</li>
+                            <li>
+                                開發首款 SSD E31 PCIe/NVMe Gen5 SSD 韌體架構。
+                                <ul>
+                                    <li>開發 E31 Gen5 SSD controller 的 PCIe initialization flow，處理軟硬整合使 link 可以達到 Gen5 並且維持穩定。</li>
+                                    <li>基於客戶需求，設計與實作客製化的 host 端 firmware features。</li>
+                                    <li>優化 low-level system sequences，例如 power-on and reset latencies 等等，來滿足 OEM 效能需求。</li>
+                                </ul>
+                            </li>
+                            <li>開發 ARM-based 的 PCIe/NVMe Gen3/4/5 SSDs firmware，並且熟悉 interrupt handling、memory management、power management 以及 DMA 等等技術。</li>
+                            <li>透過 log analysis、code tracing、使用 UEFI scripts 做 SoC verification、logic analyzers、GPIO 以及 UART 等技術來做 firmware debugging。</li>
+                            <li>專精於 PCIe and NVMe spec 並且使用 Protocol Analyzer (Viavi, LeCroy) 來解決 host 端跨平台的相容性問題。</li>
+                            <li>有經驗於跨部門合作以及出差至客戶端 on-site 支援。</li>
                         </ul>
                     </div>
                     <div class="en-text">
                         <ul>
-                            <li>Developed the first SSD E31 PCIe/NVMe Gen5 SSD Firmware Architecture.</li>
-                            <li>Developed the PCIe initialization flow for the E31 Gen5 SSD controller, ensuring seamless hardware-software integration and stable Gen5 link performance.</li>
-                            <li>Designed and implemented customized firmware features and host-side protocols based on customer requirements.</li>
-                            <li>Optimized low-level system sequences to improve responsiveness and meet stringent OEM requirements.</li>
-                            <li>Developed ARM-based firmware for PCIe/NVMe Gen3/4/5 SSDs, specializing in interrupt handling, memory management, and DMA.</li>
-                            <li>Resolved host-side compatibility issues using Protocol Analyzers (Viavi, LeCroy).</li>
+                            <li>
+                                Developed the first SSD E31 PCIe/NVMe Gen5 SSD Firmware Architecture.
+                                <ul>
+                                    <li>Developed the PCIe initialization flow for the E31 Gen5 SSD controller, ensuring seamless hardware-software integration and achieving stable Gen5 link performance.</li>
+                                    <li>Designed and implemented customized host-side firmware features based on customer requirements.</li>
+                                    <li>Optimized low-level system sequences, including power-on and reset latencies, to improve system responsiveness and meet stringent OEM performance requirements.</li>
+                                </ul>
+                            </li>
+                            <li>Developed ARM-based firmware for PCIe/NVMe Gen3/4/5 SSDs, specializing in interrupt handling, memory management, power management, and DMA.</li>
+                            <li>Performed full-stack firmware debugging through log analysis, code tracing, SoC verification using UEFI scripts, logic analyzers, GPIO, and UART.</li>
+                            <li>Proficient in PCIe and NVMe specifications and resolved host-side compatibility issues across various platforms by using Protocol Analyzer (Viavi, LeCroy).</li>
+                            <li>Collaborated cross-functionally and delivered on-site technical support at client locations.</li>
                         </ul>
                     </div>
                 </div>
@@ -90,8 +104,26 @@
                         <span class="en-inline">National Taiwan University (NTU) - Master of Engineering</span>
                     </h3>
                     <div class="timeline-date">Sep 2019 - Sep 2021</div>
-                    <p class="zh-text">論文：結合紋理特徵之多視角殘差選擇核網路應用於肺結節分類。</p>
-                    <p class="en-text">Thesis: Multiview residual selective kernel networks for lung nodule classification associated with texture features.</p>
+
+                    <div class="zh-text">
+                        <p>指導教授：張恆華</p>
+                        <p>實驗室：計算生醫工程實驗室</p>
+                        <p>論文：結合紋理特徵之多視角殘差選擇核網路應用於肺結節分類</p>
+                        <ul>
+                            <li>提出新的 AI 模型架構，並結合紋理特徵，來優化肺結節分類的準確度。</li>
+                        </ul>
+                    </div>
+
+                    <div class="en-text">
+                        <p>Advisor: HerngHua Chang</p>
+                        <p>Laboratory: Computational Biomedical Engineering Lab</p>
+                        <p>Thesis: Multiview residual selective kernel networks for lung nodule classification associated with texture features.</p>
+                        <ul>
+                            <li>Proposed a novel AI model architecture integrating texture feature extraction to optimize lung nodule classification accuracy.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">Tech Stack: Python, Pytorch, MATLAB, Deep Learning, Image Processing, Image Classification</div>
                 </div>
                 <div class="timeline-item">
                     <h3>
@@ -106,7 +138,7 @@
                 <h2><span class="zh-inline">語言能力</span><span class="en-inline">Languages</span></h2>
                 <ul>
                     <li><span class="zh-inline">中文 (母語)</span><span class="en-inline">Chinese (Native)</span></li>
-                    <li><span class="zh-inline">英文 (中級, IELTS 6.0) - 宿霧國際學院英語培訓結業</span><span class="en-inline">English (Intermediate, IELTS 6.0) - Completed training at Cebu International Academy</span></li>
+                    <li><span class="zh-inline">英文 (中級, IELTS 6.0)</span><span class="en-inline">English (Intermediate, IELTS 6.0)</span></li>
                 </ul>
             </div>
         </div>
@@ -142,38 +174,55 @@
                     </div>
 
                     <div class="skill-category">
-                        <h3><span class="zh-inline">系統軟體與內核</span><span class="en-inline">System Software & Kernel</span></h3>
+                        <h3><span class="zh-inline">Web 框架與其他軟體技能</span><span class="en-inline">Web Frameworks & Other skills</span></h3>
                         <div class="skill-tags">
-                            <span class="tag">Linux (Ubuntu/CentOS)</span>
-                            <span class="tag">FUSE</span>
-                            <span class="tag">Device Drivers</span>
-                            <span class="tag">POSIX API</span>
-                            <span class="tag">Multi-threading</span>
-                            <span class="tag">Memory Management</span>
-                            <span class="tag">Interrupt Handling (ISR)</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">AI 與 Web 框架</span><span class="en-inline">AI & Web Frameworks</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Deep Learning</span>
                             <span class="tag">Flask</span>
                             <span class="tag">FastAPI</span>
-                            <span class="tag">RESTful API</span>
-                            <span class="tag">Selenium</span>
+                            <span class="tag">RESTful API integration</span>
+                            <span class="tag">Web Crawlers (Selenium, Requests, BeautifulSoup)</span>
+                            <span class="tag">Git</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3><span class="zh-inline">硬體介面與除錯</span><span class="en-inline">Hardware & Debugging</span></h3>
+                        <h3><span class="zh-inline">AI</span><span class="en-inline">AI</span></h3>
                         <div class="skill-tags">
-                            <span class="tag">PCIe Gen3/4/5</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><span class="zh-inline">Linux Kernel & 嵌入式系統</span><span class="en-inline">Linux Kernel & Embedded System</span></h3>
+                        <div class="skill-tags">
+                            <span class="tag">FUSE</span>
+                            <span class="tag">POSIX API</span>
+                            <span class="tag">Raspberry Pi</span>
+                            <span class="tag">Arduino</span>
+                            <span class="tag">8051</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><span class="zh-inline">韌體開發與除錯 & SSD</span><span class="en-inline">Firmware development & dubugging & SSD</span></h3>
+                        <div class="skill-tags">
+                            <span class="tag">FTL Alogrithm</span>
+                            <span class="tag">PCIe</span>
                             <span class="tag">NVMe</span>
                             <span class="tag">ARM Architecture</span>
-                            <span class="tag">UEFI BIOS</span>
-                            <span class="tag">Protocol Analyzers</span>
+                            <span class="tag">UEFI script</span>
+                            <span class="tag">Logic Analyzer</span>
+                            <span class="tag">Protocol Analyzers (Viavi, LeCroy)</span>
+                            <span class="tag">Log Analysis</span>
+                            <span class="tag">GPIO</span>
+                            <span class="tag">UART</span>
+                            <span class="tag">Memory Management</span>
+                            <span class="tag">DMA</span>
+                            <span class="tag">Power Management</span>
+                            <span class="tag">Interrupt Handling (ISR)</span>
                         </div>
                     </div>
                 </div>
@@ -182,7 +231,18 @@
 
         <div id="projects" class="page-section">
             <div class="card">
-                <h2><span class="zh-inline">精選專案</span><span class="en-inline">Featured Projects</span></h2>
+                <h2><span class="zh-inline">專案</span><span class="en-inline">Projects</span></h2>
+                
+                <div class="project-item">
+                    <h3><span class="zh-inline">履歷網站</span><span class="en-inline">Resume Website</span></h3>
+                    <div class="zh-text">
+                        <p>製作一個靜態網頁，先包成 Docker image，再透過 Terraform 到 Hetzner 開一個 VM 來跑 k8s，最後使用 k8s 跑 Docker image 來架站。</p>
+                    </div>
+                    <div class="en-text">
+                        <p>Create a static website, package it into a Docker image, and then use Terraform to provision a VM on Hetzner to run K8s. Finally, use K8s to run the Docker image to host the website.</p>
+                    </div>
+                    <div class="tech-stack">Tech Stack: Docker, Terraform, K8s, Hetzner, HTML, CSS, JavaScript</div>
+                </div>
 
                 <div class="project-item">
                     <h3><span class="zh-inline">每日 AI 自動化財經新聞電子報</span><span class="en-inline">Daily AI-Automated Financial News Newsletter</span></h3>
@@ -192,7 +252,18 @@
                     <div class="en-text">
                         <p>Developed a fully automated cloud-native system utilizing Docker and AWS to orchestrate web scraping, AI-driven financial news summarization, and audio generation, leveraging n8n workflows for delivery via email.</p>
                     </div>
-                    <div class="tech-stack">Tech Stack: Python, Selenium, AWS, Docker, n8n, Google Gemini API, Azure AI Speech</div>
+                    <div class="tech-stack">Tech Stack: Python, Selenium, BeautifulSoup, Requests, AWS, Docker, n8n, Google Gemini API, Azure AI Speech API</div>
+                </div>
+
+                <div class="project-item">
+                    <h3><span class="zh-inline">智慧夜生活導航與活動 LINE Bot</span><span class="en-inline">Smart Nightlife Navigator & Event Companion LINE Bot</span></h3>
+                    <div class="zh-text">
+                        <p>使用 Docker、Render 和 UptimeRobot 建立穩定的 LINE Bot，整合 Google Maps API 自動探索飲酒場所並主持隨機飲酒遊戲。</p>
+                    </div>
+                    <div class="en-text">
+                        <p>Built a stable LINE Bot using Docker, Render, and UptimeRobot that integrates Google Maps API to automate the discovery of drinking venues and host random drinking games.</p>
+                    </div>
+                    <div class="tech-stack">Tech Stack: Python, Flask, Webhook, Google Maps API, Docker, Render</div>
                 </div>
 
                 <div class="project-item">
@@ -204,28 +275,6 @@
                         <p>Engineered a persistent file system in C++17 simulating classic Unix architecture (EXT2-like). Enforced thread safety for concurrent operations using std::mutex, effectively eliminating race conditions during resource allocation.</p>
                     </div>
                     <div class="tech-stack">Tech Stack: C++17, C, Bash, FUSE (libfuse3), POSIX API</div>
-                </div>
-
-                <div class="project-item">
-                    <h3><span class="zh-inline">智慧夜生活導航與活動 LINE Bot</span><span class="en-inline">Smart Nightlife Navigator & Event Companion LINE Bot</span></h3>
-                    <div class="zh-text">
-                        <p>使用 Docker、Render 和 UptimeRobot 建立穩定的 LINE Bot，整合 Google Maps API 自動探索飲酒場所並主持隨機飲酒遊戲。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Built a stable LINE Bot using Docker, Render, and UptimeRobot that integrates Google Maps API to automate the discovery of drinking venues and host random drinking games.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: Python, Flask, Webhook, Google Maps API, Docker</div>
-                </div>
-
-                <div class="project-item">
-                    <h3><span class="zh-inline">定位追蹤系統</span><span class="en-inline">Positioning System</span></h3>
-                    <div class="zh-text">
-                        <p>使用 Arduino GPS 模組、Google Pub/Sub、MySQL 和 PHP 建立位置追蹤系統。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Built a location tracking system using an Arduino GPS module, Google Pub/Sub, MySQL, PHP, and the Google Maps API.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: C++, Python, Arduino, Google Pub/Sub, MySQL, PHP</div>
                 </div>
             </div>
         </div>
