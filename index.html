@@ -23,262 +23,38 @@
             <button onclick="toggleLanguage()" class="lang-switch">
                 <span class="zh-inline">EN / 中</span><span class="en-inline">中 / EN</span>
             </button>
+            <button onclick="downloadHTML()" class="lang-switch" style="background-color: #27ae60 !important; margin-left: 10px;">
+                Download HTML
+            </button>
         </div>
     </nav>
 
     <div class="container">
         <div id="about" class="page-section active">
-            <div class="card profile-header">
-                <h1>
-                    <span class="zh-inline">吳承哲 (Andy)</span>
-                    <span class="en-inline">ChengZhe Wu (Andy)</span>
-                </h1>
-                <div class="contact-info">
-                    <span><span class="zh-inline">手機:</span><span class="en-inline">Mobile:</span> (+886) 930-721-818</span>
-                    <span>Email: luckyandy234@gmail.com</span>
+            <div class="card profile-header" id="profile-container">
                 </div>
-                <div class="social-info">
-                    <a href="https://linkedin.com/in/chengzhewu" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/ChengZheWu" target="_blank">GitHub</a>
+
+            <div class="card" id="intro-container">
                 </div>
-            </div>
 
-            <div class="card">
-                <h2><span class="zh-inline">個人簡介</span><span class="en-inline">Introduction</span></h2>
-                <div class="zh-text">
-                    <p>我是一名熱愛學習新技術的工程師，研究所時期以研究AI影像處理為主，而在過去的工作中從事SSD控制晶片韌體開發，主要解決PCIe跟NVMe相關的host端問題，並熟悉軟硬體整合。</p>
-                    <p>目前想轉職為一名軟體工程師，在一年的gap year中，除了練習LeetCode之外，我自主學習了 DevOps 技術與自動化流程，像是 Docker、K8s、Terraform 以及 CI/CD 流程等等，並且學以致用了幾個實用的專案，不僅可以幫助自己解決自身需求，還能夠精進自己的技術。</p>
+            <div class="card" id="experience-container">
                 </div>
-                <div class="en-text">
-                    <p>I am an engineer who is passionate about learning new technologies. During my graduate studies, my research focused on AI image processing. In my previous role, I worked on SSD controller firmware development, primarily handling host-side issues related to PCIe and NVMe, and I am familiar with hardware-software integration.</p>
-                    <p>Currently, I am looking to transition into a career as a software engineer. During my one-year gap year, in addition to practicing LeetCode, I have self-studied DevOps technologies and automation workflows, such as Docker, K8s, Terraform, and CI/CD processes. I have also applied what I’ve learned to several practical projects, which not only help solve my own needs but also allow me to refine my technical skills.</p>
+
+            <div class="card" id="education-container">
                 </div>
-            </div>
 
-            <div class="card">
-                <h2><span class="zh-inline">工作經歷</span><span class="en-inline">Work Experience</span></h2>
-                
-                <div class="timeline-item">
-                    <h3>
-                        <span class="zh-inline">SSD 韌體工程師 - 群聯電子</span><span class="en-inline">SSD Firmware Engineer - Phison Electronics Corp</span> 
-                    </h3>
-                    <div class="timeline-date">Dec 2021 - Mar 2025</div>
-                    <div class="zh-text">
-                        <ul>
-                            <li>
-                                開發首款 SSD E31 PCIe/NVMe Gen5 SSD 韌體架構。
-                                <ul>
-                                    <li>開發 E31 Gen5 SSD controller 的 PCIe initialization flow，處理軟硬整合使 link 可以達到 Gen5 並且維持穩定。</li>
-                                    <li>基於客戶需求，設計與實作客製化的 host 端 firmware features。</li>
-                                    <li>優化 low-level system sequences，例如 power-on and reset latencies 等等，來滿足 OEM 效能需求。</li>
-                                </ul>
-                            </li>
-                            <li>開發 ARM-based 的 PCIe/NVMe Gen3/4/5 SSDs firmware，並且熟悉 interrupt handling、memory management、power management 以及 DMA 等等技術。</li>
-                            <li>透過 log analysis、code tracing、使用 UEFI scripts 做 SoC verification、logic analyzers、GPIO 以及 UART 等技術來做 firmware debugging。</li>
-                            <li>專精於 PCIe and NVMe spec 並且使用 Protocol Analyzer (Viavi, LeCroy) 來解決 host 端跨平台的相容性問題。</li>
-                            <li>有經驗於跨部門合作以及出差至客戶端 on-site 支援。</li>
-                        </ul>
-                    </div>
-                    <div class="en-text">
-                        <ul>
-                            <li>
-                                Developed the first SSD E31 PCIe/NVMe Gen5 SSD Firmware Architecture.
-                                <ul>
-                                    <li>Developed the PCIe initialization flow for the E31 Gen5 SSD controller, ensuring seamless hardware-software integration and achieving stable Gen5 link performance.</li>
-                                    <li>Designed and implemented customized host-side firmware features based on customer requirements.</li>
-                                    <li>Optimized low-level system sequences, including power-on and reset latencies, to improve system responsiveness and meet stringent OEM performance requirements.</li>
-                                </ul>
-                            </li>
-                            <li>Developed ARM-based firmware for PCIe/NVMe Gen3/4/5 SSDs, specializing in interrupt handling, memory management, power management, and DMA.</li>
-                            <li>Performed full-stack firmware debugging through log analysis, code tracing, SoC verification using UEFI scripts, logic analyzers, GPIO, and UART.</li>
-                            <li>Proficient in PCIe and NVMe specifications and resolved host-side compatibility issues across various platforms by using Protocol Analyzer (Viavi, LeCroy).</li>
-                            <li>Collaborated cross-functionally and delivered on-site technical support at client locations.</li>
-                        </ul>
-                    </div>
+            <div class="card" id="languages-container">
                 </div>
-            </div>
-
-            <div class="card">
-                <h2><span class="zh-inline">學歷</span><span class="en-inline">Education</span></h2>
-                <div class="timeline-item">
-                    <h3>
-                        <span class="zh-inline">國立臺灣大學 (NTU) - 工程科學與海洋工程研究所 碩士</span>
-                        <span class="en-inline">National Taiwan University (NTU) - Master of Engineering</span>
-                    </h3>
-                    <div class="timeline-date">Sep 2019 - Sep 2021</div>
-
-                    <div class="zh-text">
-                        <p>指導教授：張恆華</p>
-                        <p>實驗室：計算生醫工程實驗室</p>
-                        <p>論文：結合紋理特徵之多視角殘差選擇核網路應用於肺結節分類</p>
-                        <ul>
-                            <li>提出新的 AI 模型架構，並結合紋理特徵，來優化肺結節分類的準確度。</li>
-                        </ul>
-                    </div>
-
-                    <div class="en-text">
-                        <p>Advisor: HerngHua Chang</p>
-                        <p>Laboratory: Computational Biomedical Engineering Lab</p>
-                        <p>Thesis: Multiview residual selective kernel networks for lung nodule classification associated with texture features.</p>
-                        <ul>
-                            <li>Proposed a novel AI model architecture integrating texture feature extraction to optimize lung nodule classification accuracy.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tech-stack">Tech Stack: Python, Pytorch, MATLAB, Deep Learning, Image Processing, Image Classification</div>
-                </div>
-                <div class="timeline-item">
-                    <h3>
-                        <span class="zh-inline">國立臺灣師範大學 (NTNU) - 地球科學系 學士</span>
-                        <span class="en-inline">National Taiwan Normal University (NTNU) - Bachelor of Science</span>
-                    </h3>
-                    <div class="timeline-date">Jun 2014 - Sep 2018</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h2><span class="zh-inline">語言能力</span><span class="en-inline">Languages</span></h2>
-                <ul>
-                    <li><span class="zh-inline">中文 (母語)</span><span class="en-inline">Chinese (Native)</span></li>
-                    <li><span class="zh-inline">英文 (中級, IELTS 6.0)</span><span class="en-inline">English (Intermediate, IELTS 6.0)</span></li>
-                </ul>
-            </div>
         </div>
 
         <div id="skills" class="page-section">
-            <div class="card">
-                <h2><span class="zh-inline">專業技能</span><span class="en-inline">Technical Skills</span></h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">程式語言</span><span class="en-inline">Programming Languages</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">C++</span>
-                            <span class="tag">C</span>
-                            <span class="tag">Bash/Shell Scripting</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">MATLAB</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">雲端與 DevOps</span><span class="en-inline">Cloud, DevOps & Automation</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">Docker</span>
-                            <span class="tag">Kubernetes (K8s)</span>
-                            <span class="tag">AWS</span>
-                            <span class="tag">GCP</span>
-                            <span class="tag">Terraform</span>
-                            <span class="tag">GitHub Actions</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">n8n</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">Web 框架與其他軟體技能</span><span class="en-inline">Web Frameworks & Other skills</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">RESTful API integration</span>
-                            <span class="tag">Web Crawlers (Selenium, Requests, BeautifulSoup)</span>
-                            <span class="tag">Git</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">AI</span><span class="en-inline">AI</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">NLP</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">Linux Kernel & 嵌入式系統</span><span class="en-inline">Linux Kernel & Embedded System</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">FUSE</span>
-                            <span class="tag">POSIX API</span>
-                            <span class="tag">Raspberry Pi</span>
-                            <span class="tag">Arduino</span>
-                            <span class="tag">8051</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><span class="zh-inline">韌體開發與除錯 & SSD</span><span class="en-inline">Firmware development & dubugging & SSD</span></h3>
-                        <div class="skill-tags">
-                            <span class="tag">FTL Alogrithm</span>
-                            <span class="tag">PCIe</span>
-                            <span class="tag">NVMe</span>
-                            <span class="tag">ARM Architecture</span>
-                            <span class="tag">UEFI script</span>
-                            <span class="tag">Logic Analyzer</span>
-                            <span class="tag">Protocol Analyzers (Viavi, LeCroy)</span>
-                            <span class="tag">Log Analysis</span>
-                            <span class="tag">GPIO</span>
-                            <span class="tag">UART</span>
-                            <span class="tag">Memory Management</span>
-                            <span class="tag">DMA</span>
-                            <span class="tag">Power Management</span>
-                            <span class="tag">Interrupt Handling (ISR)</span>
-                        </div>
-                    </div>
+            <div class="card" id="skills-container">
                 </div>
-            </div>
         </div>
 
         <div id="projects" class="page-section">
-            <div class="card">
-                <h2><span class="zh-inline">專案</span><span class="en-inline">Projects</span></h2>
-                
-                <div class="project-item">
-                    <h3><span class="zh-inline">履歷網站</span><span class="en-inline">Resume Website</span></h3>
-                    <div class="zh-text">
-                        <p>製作一個靜態網頁，先包成 Docker image，再透過 Terraform 到 Hetzner 開一個 VM 來跑 k8s，最後使用 k8s 跑 Docker image 來架站。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Create a static website, package it into a Docker image, and then use Terraform to provision a VM on Hetzner to run K8s. Finally, use K8s to run the Docker image to host the website.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: Docker, Terraform, K8s, Hetzner, HTML, CSS, JavaScript</div>
+            <div class="card" id="projects-container">
                 </div>
-
-                <div class="project-item">
-                    <h3><span class="zh-inline">每日 AI 自動化財經新聞電子報</span><span class="en-inline">Daily AI-Automated Financial News Newsletter</span></h3>
-                    <div class="zh-text">
-                        <p>開發全自動化的雲原生系統，利用 Docker 和 AWS 協調網路爬蟲、AI 驅動的新聞摘要和音訊生成。利用 n8n 工作流程透過電子郵件發送最終報告和 Podcast。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Developed a fully automated cloud-native system utilizing Docker and AWS to orchestrate web scraping, AI-driven financial news summarization, and audio generation, leveraging n8n workflows for delivery via email.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: Python, Selenium, BeautifulSoup, Requests, AWS, Docker, n8n, Google Gemini API, Azure AI Speech API</div>
-                </div>
-
-                <div class="project-item">
-                    <h3><span class="zh-inline">智慧夜生活導航與活動 LINE Bot</span><span class="en-inline">Smart Nightlife Navigator & Event Companion LINE Bot</span></h3>
-                    <div class="zh-text">
-                        <p>使用 Docker、Render 和 UptimeRobot 建立穩定的 LINE Bot，整合 Google Maps API 自動探索飲酒場所並主持隨機飲酒遊戲。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Built a stable LINE Bot using Docker, Render, and UptimeRobot that integrates Google Maps API to automate the discovery of drinking venues and host random drinking games.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: Python, Flask, Webhook, Google Maps API, Docker, Render</div>
-                </div>
-
-                <div class="project-item">
-                    <h3><span class="zh-inline">FUSE 使用者空間檔案系統實作</span><span class="en-inline">FUSE-based User-Space File System Implementation</span></h3>
-                    <div class="zh-text">
-                        <p>使用 C++17 模擬經典 Unix 架構（類 EXT2）設計了一個持久性檔案系統。利用 Superblock、Inode Tables 和 Bitmap 分配進行高效的中繼資料管理。使用 std::mutex 和 Monitor Pattern 強制執行執行緒安全，消除競爭條件。</p>
-                    </div>
-                    <div class="en-text">
-                        <p>Engineered a persistent file system in C++17 simulating classic Unix architecture (EXT2-like). Enforced thread safety for concurrent operations using std::mutex, effectively eliminating race conditions during resource allocation.</p>
-                    </div>
-                    <div class="tech-stack">Tech Stack: C++17, C, Bash, FUSE (libfuse3), POSIX API</div>
-                </div>
-            </div>
         </div>
     </div>
 
