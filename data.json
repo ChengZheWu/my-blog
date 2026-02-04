@@ -142,10 +142,10 @@
       {
         "title": { "zh": "履歷網站", "en": "Resume Website" },
         "desc": {
-          "zh": "製作一個靜態網頁，先包成 Docker image，再透過 Terraform 到 Hetzner 開一個 VM 來跑 k8s，最後使用 k8s 跑 Docker image 來架站。",
-          "en": "Create a static website, package it into a Docker image, and then use Terraform to provision a VM on Hetzner to run K8s. Finally, use K8s to run the Docker image to host the website."
+          "zh": "開發一個採用資料驅動架構的履歷網站，先包成 Docker image，再使用 Terraform 與 Kubernetes 部署於 Hetzner Cloud，並透過 GitHub Actions 實現全自動化的 CI/CD 流程。",
+          "en": "Developed a data-driven resume website, packaged it into a Docker image, deployed it to Hetzner Cloud using Terraform and Kubernetes, and implemented a fully automated CI/CD pipeline via GitHub Actions."
         },
-        "stack": "Tech Stack: Docker, Terraform, K8s, Hetzner, HTML, CSS, JavaScript"
+        "stack": "Tech Stack: Docker, Terraform, K8s, Hetzner, GitHub Actions, HTML, CSS, JavaScript"
       },
       {
         "title": { "zh": "每日 AI 自動化財經新聞電子報", "en": "Daily AI-Automated Financial News Newsletter" },
