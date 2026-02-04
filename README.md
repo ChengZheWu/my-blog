@@ -78,6 +78,10 @@ python3 -m http.server 8080
 
 ```
 
+### 4. Resume Export
+
+Click the download button to generate a custom-formatted HTML resume. To convert it to PDF, simply open the file in your browser, press Ctrl+P (or Cmd+P), and select 'Save as PDF'.
+
 ## ☁️ Deployment & Infrastructure
 
 This project uses **Terraform** to provision the cloud environment.
