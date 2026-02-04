@@ -150,7 +150,7 @@
       {
         "title": { "zh": "每日 AI 自動化財經新聞電子報", "en": "Daily AI-Automated Financial News Newsletter" },
         "desc": {
-          "zh": "開發全自動化的雲原生系統，利用 Docker 和 AWS 協調網路爬蟲、AI 驅動的新聞摘要和音訊生成。利用 n8n 工作流程透過電子郵件發送最終報告和 Podcast。",
+          "zh": "開發全自動化的雲原生系統，利用 Docker 和 AWS 協調網路爬蟲、AI 驅動的新聞摘要和音訊生成，利用 n8n 工作流程透過電子郵件發送最終報告和 Podcast。",
           "en": "Developed a fully automated cloud-native system utilizing Docker and AWS to orchestrate web scraping, AI-driven financial news summarization, and audio generation, leveraging n8n workflows for delivery via email."
         },
         "stack": "Tech Stack: Python, Selenium, BeautifulSoup, Requests, AWS, Docker, n8n, Google Gemini API, Azure AI Speech API"
