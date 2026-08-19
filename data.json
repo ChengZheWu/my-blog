@@ -131,7 +131,7 @@
       },
       {
         "title": { "zh": "韌體與嵌入式系統", "en": "Firmware & Embedded System" },
-        "tags": ["ARM Architecture", "Bare-metal Firmware", "Low-level Driver", "Device Driver", "Linux Kernel Driver", "Yocto", "Buildroot", "RTOS", "UART", "I2C", "PCIe", "NVMe", "Make", "QEMU", "Raspberry Pi", "Arduino", "8051"]
+        "tags": ["ARM Architecture", "Bare-metal Firmware", "Low-level Driver", "Device Driver", "Linux Kernel Driver", "Yocto", "Buildroot", "RTOS", "UART", "I2C", "PCIe", "NVMe", "Make", "QEMU", "FPGA", "Zebu", "Raspberry Pi", "Arduino", "8051"]
       },
       {
         "title": { "zh": "除錯與分析工具", "en": "Debugging & Tools" },
