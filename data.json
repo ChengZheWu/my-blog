@@ -20,10 +20,10 @@
     "title": { "zh": "個人簡介", "en": "Introduction" },
     "content": {
       "zh": [
-        "具備 3 年以上 SoC 韌體開發經驗，專精於 C/C++ 語言、ARM 架構及高速介面協議（PCIe）。擅長設計 Low-level Driver、HAL 以及軟硬體整合，具備深厚的底層除錯實力，並能熟練運用 Protocol Analyzer 診斷複雜的鏈路穩定性與系統相容性問題。於職涯轉銜的這一年，我不僅出國遊學學英文，並且還持續透過 LeetCode 強化資料結構與演算法邏輯，並積極運用 AI 技術加速新技能學習與 Side Project 實作，包含嵌入式系統的相關技能，例如 Device Driver, RTOS, Embedded linux 等等。目前尋求韌體及嵌入式開發職位，期許能發揮在高效能即時系統開發中的嚴謹邏輯，結合多元的技術視野協助團隊優化研發效率。"
+        "具備 3 年以上 SoC 韌體開發經驗，專精於 C/C++ 語言、ARM 架構及高速介面協議（PCIe）。擅長設計 Low-level Driver、HAL 以及軟硬體整合，具備深厚的底層除錯實力，並能熟練運用 Protocol Analyzer 診斷複雜的鏈路穩定性與系統相容性問題。於職涯轉銜的一年間，我不僅出國遊學精進英文，並持續透過 LeetCode 強化資料結構與演算法邏輯，同時積極運用 AI 技術加速新技能學習與 Side Project 實作，涵蓋 Device Driver、RTOS、Embedded Linux 等嵌入式系統相關技能。目前於耐能智慧（Kneron）擔任嵌入式軟體工程師，負責新一代 NPU SoC 之 RTOS PCIe 驅動程式開發與軟硬體整合驗證，期許持續發揮在高效能即時系統開發中的嚴謹邏輯，結合多元的技術視野協助團隊優化研發效率。"
       ],
       "en": [
-        "With over 3 years of experience in SoC firmware development, I specialize in C/C++, ARM architecture, and high-speed interface protocols (PCIe). I am adept at designing low-level drivers, Hardware Abstraction Layers (HAL), and executing seamless hardware-software integration. I possess deep debugging capabilities and am proficient in using protocol analyzers to diagnose complex link stability and system compatibility issues. During my recent career transition year, I focused on improving my English proficiency abroad while continuously strengthening my data structures and algorithm logic through LeetCode. I have also actively leveraged AI technologies to accelerate my learning of new skills and the implementation of side projects, covering embedded domains such as device drivers, RTOS, and Embedded Linux. I am currently seeking a Firmware or Embedded Development position where I can apply my rigorous logic in high-performance real-time systems and utilize my diverse technical perspective to enhance team R&D efficiency."
+        "With over 3 years of experience in SoC firmware development, I specialize in C/C++, ARM architecture, and high-speed interface protocols (PCIe). I am adept at designing low-level drivers, Hardware Abstraction Layers (HAL), and executing seamless hardware-software integration. I possess deep debugging capabilities and am proficient in using protocol analyzers to diagnose complex link stability and system compatibility issues. During a career transition year, I studied abroad to improve my English proficiency while continuously strengthening my data structures and algorithm logic through LeetCode, and actively leveraged AI technologies to accelerate learning of new skills and side projects across embedded domains such as device drivers, RTOS, and Embedded Linux. I am currently an Embedded Software Engineer at Kneron, where I develop RTOS PCIe drivers and drive hardware/software integration verification for next-generation NPU SoCs, applying rigorous logic in high-performance real-time systems and a diverse technical perspective to enhance team R&D efficiency."
       ]
     }
   },
@@ -69,14 +69,14 @@
         "date": "Jul 2026 - Now",
         "details": {
           "zh": [
-            "主導基於 RTOS 環境之 PCIe 驅動程式早期開發，專為新一代 NPU SoC 進行架構設計。",
-            "負責搭建 FPGA 驗證平台與環境，用以進行功能性驗證，加速軟硬體整合初期之除錯。",
-            "計畫未來將驅動程式移植至 Embedded Linux 系統。"
+            "基於 ARM Cortex-A 系列 CPU 之新一代 NPU SoC，主導 RTOS 環境下 PCIe 驅動程式開發，並搭建 FPGA、Zebu 驗證平台驗證 PCIe 功能與進行軟硬體整合除錯。",
+            "設計並實作 PCIe DMA 資料傳輸測速功能，量測並優化資料傳輸效能。",
+            "開發 RTOS Middleware 之 Command Queue 機制，並負責與 Linux Host 端驅動程式的串接整合。"
           ],
           "en": [
-            "Initiate the development of PCIe drivers on RTOS environments, custom-designed for next-generation NPU SoCs.",
-            "Establish FPGA-based verification environments to conduct functional validation and accelerate early-stage hardware/software integration.",
-            "Plan to port the driver to an embedded Linux system in the future."
+            "Led PCIe driver development on RTOS for next-generation NPU SoCs based on ARM Cortex-A series CPUs, and built FPGA/Zebu verification platforms to validate PCIe functionality and debug hardware/software integration.",
+            "Designed and implemented PCIe DMA throughput measurement features to benchmark and optimize data transfer performance.",
+            "Developed the Command Queue mechanism for the RTOS middleware and integrated it with the Linux host-side driver."
           ]
         }
       }
